@@ -22,12 +22,12 @@ NEUROSITY_PASSWORD=?
 
 ### Best JavaScript API:
 
-- https://github.com/VadimGarkusha/nanoleaf-client
+- https://github.com/ceejbot/nanoleaves
 
 ### Packages that don't work well:
 
-- // https://github.com/ceejbot/nanoleaves
-- // https://github.com/darrent/nanoleaf-aurora-api
+- https://github.com/VadimGarkusha/nanoleaf-client
+- https://github.com/darrent/nanoleaf-aurora-api
 
 ## Docs
 
