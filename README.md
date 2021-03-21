@@ -1,6 +1,6 @@
 # Notion + Nanoleaf
 
-#### Get token
+#### Get token ([more info](https://github.com/ceejbot/nanoleaves))
 
 ```
 ./node_modules/.bin/nanoleaves token
@@ -9,16 +9,20 @@
 #### Set ENV vars:
 
 ```
-HOST=192.168.1.217
+AURORA_HOST=192.168.?.?
+AURORA_PORT=16021
+AURORA_TOKEN=?
 BASE=/api/v1/
-PORT=16021
-ACCESS_TOKEN=?
 NEUROSITY_DEVICE_ID=?
 NEUROSITY_EMAIL=?
 NEUROSITY_PASSWORD=?
 ```
 
-> Get HOST from router settings
+> Get `AURORA_HOST` from router settings
+
+### Run the sample
+
+Execute `node src/calm.js` or `node src/signalQuality.js`
 
 ### Best JavaScript API:
 
