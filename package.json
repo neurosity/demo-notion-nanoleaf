@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@neurosity/notion": "^5.6.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     
     "local-devices": "^3.2.0",
     "nanoleaves": "^1.2.0",
