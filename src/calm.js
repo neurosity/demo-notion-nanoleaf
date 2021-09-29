@@ -10,8 +10,8 @@ const notion = new Notion({
 });
 
 const nanoleaf = new Nanoleaf({
-  host: process.env.HOST,
-  token: process.env.ACCESS_TOKEN,
+  host: process.env.NANOLEAF_HOST,
+  token: process.env.NANOLEAF_ACCESS_TOKEN,
 });
 
 (async function main() {
@@ -24,7 +24,6 @@ const nanoleaf = new Nanoleaf({
   });
 
   const panels = info.panelLayout.layout.positionData;
-  panels.pop(); // remove 9th
 
   const status$ = notion.status();
   const calm$ = notion.calm();
@@ -35,11 +34,11 @@ const nanoleaf = new Nanoleaf({
         ? getSleepModeColors(panels)
         : getProgressBar(calm.probability, panels);
 
-      console.log("calm", calm.probability, sleepMode);
+      console.log("calm", calm.probability, { sleepMode }, panelColors);
 
       await nanoleaf
         .setStaticPanel(panelColors)
-        .catch((error) => console.error(error.message));
+        .catch((error) => console.error("nanoleaf.setStaticPanel error", error.message));
     }
   );
 })();

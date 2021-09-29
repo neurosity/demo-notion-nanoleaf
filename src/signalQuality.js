@@ -9,8 +9,8 @@ const notion = new Notion({
 });
 
 const nanoleaf = new Nanoleaf({
-  host: process.env.HOST,
-  token: process.env.ACCESS_TOKEN,
+  host: process.env.NANOLEAF_HOST,
+  token: process.env.NANOLEAF_ACCESS_TOKEN,
 });
 
 (async function main() {
@@ -23,7 +23,6 @@ const nanoleaf = new Nanoleaf({
   });
 
   const panels = info.panelLayout.layout.positionData;
-  panels.pop(); // remove 9th
 
   notion.signalQuality().subscribe(async (signalQuality) => {
     const panelColors = signalQualityToColors(signalQuality, panels);

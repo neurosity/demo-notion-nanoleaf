@@ -1,39 +1,49 @@
-# Notion + Nanoleaf
+# Neurosity Crown + Nanoleaf
 
-#### Get token ([more info](https://github.com/ceejbot/nanoleaves))
+## 1. Install dependencies
+
+Run:
+
+`npm install`
+
+## 2. Get token
+
+Run:
 
 ```
-./node_modules/.bin/nanoleaves token
+npm run token
 ```
 
-#### Set ENV vars:
+> Make sure to copy the environment variables into a `.env` file.
+
+## 3. Set ENV vars:
 
 ```
-AURORA_HOST=192.168.?.?
-AURORA_PORT=16021
-AURORA_TOKEN=?
-BASE=/api/v1/
+NANOLEAF_HOST=x.x.x.x
+NANOLEAF_ACCESS_TOKEN=?
 NEUROSITY_DEVICE_ID=?
 NEUROSITY_EMAIL=?
 NEUROSITY_PASSWORD=?
 ```
 
-> Get `AURORA_HOST` from router settings
+# 4. Run the sample
 
-### Run the sample
+Run:
 
-Execute `node src/calm.js` or `node src/signalQuality.js`
+`npm start`
 
-### Best JavaScript API:
+or
 
-- https://github.com/ceejbot/nanoleaves
+`node ./src/calm.js`
 
-### Packages that don't work well:
+or
 
-- https://github.com/VadimGarkusha/nanoleaf-client
-- https://github.com/darrent/nanoleaf-aurora-api
+`node ./src/signalQuality.js`
 
-## Docs
+## Nanoleaf Links
 
-https://documenter.getpostman.com/view/1559645/RW1gEcCH?version=latest#intro
-https://forum.nanoleaf.me/docs/openapi
+[nanoleaves docs](https://documenter.getpostman.com/view/1559645/RW1gEcCH?version=latest#intro)
+
+[nanoleaves openapi](https://forum.nanoleaf.me/docs/openapi)
+
+[nanoleaves for nodejs](https://github.com/ceejbot/nanoleaves)
